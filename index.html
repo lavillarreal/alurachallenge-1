@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="crypto.js"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="app-container">
+            <h1>Encriptador alura</h1>
+            <div class="imput-container">
+                <div class="text-imput-container">
+                    <label for="imput">Texto a procesar:</label>
+                    <textarea id="imput" onclick="borrarTexto()"></textarea>
+                </div>
+                <div class="buttons-container">
+                    <button class="function-button" onclick="encriptarTexto()">Encriptar</button>
+                    <button class="function-button" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <section id="result-section" class="result-section">   
+            <div class="result-container">
+                <h1>Resultado:</h1>
+                <div class="imput-container">
+                    <div class="text-imput-container">
+                        <label id="outputLabel">No se ingresó texto.</label>
+                        <textarea readonly class="output-area" id="output"></textarea>
+                    </div>
+                    <div class="buttons-container">
+                        <button class="copy-button" onclick="copyText()">Copiar texto</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div>
+</body>
+</html>
